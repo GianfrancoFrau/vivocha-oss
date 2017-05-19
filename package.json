@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:fb": "ng build --prod && firebase deploy",
-    "deploy:gh": ""
+    "deploy:gh": "ng build --prod --base-href \"https://GianfrancoFrau.github.io/vivocha-oss/\""
   },
   "private": true,
   "dependencies": {
