@@ -1,0 +1,174 @@
+$vvc-blue: #205A8B;
+$vvc-orange: #F47929;
+
+.content {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+a {
+  color: $vvc-blue;
+  text-decoration: underline;
+}
+
+.menu {
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+    color: $vvc-blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      color: $vvc-orange;
+    }
+  }
+}
+
+.main-header {
+  text-align: center;
+  margin-top: 20px;
+
+  img {
+    width: 60%;
+  }
+
+  h2 {
+    margin: 0 0 20px 0;
+    color: $vvc-orange;
+  }
+}
+
+.repo {
+  padding: 10px;
+  background: #ddd;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-bottom: 2px solid $vvc-blue;
+  // font-family: 'Titillium Web', sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    border-bottom: 2px solid $vvc-orange;
+
+    .repo-name {
+      color: $vvc-blue;
+    }
+
+    .repo-stars,
+    .repo-forks {
+      color: $vvc-orange;
+    }
+  }
+
+  .pure-g { align-content: flex center }
+
+  .language-icon {
+    // position: relative;
+    font-size: 3em;
+    color: white;
+  }
+
+  .language-icon i {
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+  }
+
+  .repo-header {
+    margin-bottom: 5px;
+
+    .repo-name {
+      margin: 0;
+    }
+
+    span {
+      i {
+        margin-right: 4px;
+      }
+      margin-right: 5px;
+    }
+  }
+}
+
+.language {
+  padding: 4px 10px;
+  background: #ddd;
+  margin-right: 4px;
+  border-radius: 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.active {
+    padding: 4px 0px 4px 10px;
+    background: black;
+    color: $vvc-orange;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .language-counter {
+    color: white;
+    margin-left: 3px;
+    padding: 4px 10px;
+    background: $vvc-blue;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+.search {
+  border: none;
+  padding: 2px;
+  width: 70%;
+  background: transparent;
+  border-bottom: 2px solid #ddd;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.section-people {
+
+  .avatar-wrapper {
+
+    position: relative;
+    padding: 15px;
+
+    img {
+      background: white;
+      border: 1px solid #ddd;
+      width: 100%;
+    }
+
+    &:hover {
+
+      -webkit-filter:brightness(80%);
+      filter:brightness(80%);
+
+      .avatar-caption {
+        transition: 0.1s;
+        display: block;
+      }
+    }
+
+    .avatar-caption {
+      display: none;
+      font-size: 2.5em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+$vvc-blue: #205A8B;
+$vvc-orange: #F47929;
+
+.vvc-blue { color: $vvc-blue; }
+.vvc-orange { color: $vvc-orange; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+body {
+  background: #ecf0f1;
+  border-top: 4px solid $vvc-blue;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/** LAYOUT CSS **/
